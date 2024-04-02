@@ -8,16 +8,16 @@ while True:
     if choice=='1':
        amount=float(input("enter amount to deposit:"))
        balance+=amount
-       print("credited amount your acount:",{balance})
+       print("credited amount your acount:",balance)
     elif choice=='2':
        amount=float(input("enter amount to whithdraw:"))
        if amount>balance:
         print("insufficient inventory.")
        else:
         balance-=amount
-        print("deducted amount from your account:",{balance})
+        print("deducted amount from your account:",balance)
     elif choice=='3':
-      print("your account balance:",{balance})
+      print("your account balance:",balance)
     elif choice=='4':
       print("exiting the bank acount system.")
 
